@@ -7,7 +7,7 @@ document.getElementById('caesarForm').addEventListener('submit', function(e) {
     const mode = document.querySelector('input[name="mode"]:checked').value; // Get the selected mode (encrypt or decrypt)
      
     let resultText;
-
+ 
     if (mode === 'encrypt') {
         resultText = caesarCipher(inputText, shiftValue);
     } else if (mode === 'decrypt') {
