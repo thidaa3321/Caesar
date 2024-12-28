@@ -12,7 +12,7 @@ document.getElementById('caesarForm').addEventListener('submit', function(e) {
         resultText = caesarCipher(inputText, shiftValue);
     } else if (mode === 'decrypt') {
         resultText = caesarCipher(inputText, -shiftValue); // For decryption, we just reverse the shift
-    }
+    } 
 
     document.getElementById('outputText').textContent = resultText;
 });
